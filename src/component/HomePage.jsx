@@ -4,46 +4,46 @@ import Offer from '../layout/Offer/Offer';
 import PackageOffer from '../layout/Offer/PackageOffer';
 import 'react-slideshow-image/dist/styles.css';
 import Layout from '../layout/layout';
-import t1 from '../assets/images/1.jpg';
-import t2 from '../assets/images/2.jpg';
-import t3 from '../assets/images/3.jpg';
-import t4 from '../assets/images/4.jpg';
-import o1 from '../assets/images/o1.png';
-import o2 from '../assets/images/o2.png';
-import o3 from '../assets/images/o3.png';
-import o4 from '../assets/images/o4.png';
-import testimonial1 from '../assets/images/testimonial1.jpg';
-import testimonial2 from '../assets/images/testimonial2.jpg';
-import user1 from '../assets/images/7.jpg';
-import user2 from '../assets/images/8.jpg';
-import user3 from '../assets/images/9.jpg';
+import t1 from '/assets/images/1.jpg';
+import t2 from '/assets/images/2.jpg';
+import t3 from '/assets/images/3.jpg';
+import t4 from '/assets/images/4.jpg';
+import o1 from '/assets/images/o1.png';
+import o2 from '/assets/images/o2.png';
+import o3 from '/assets/images/o3.png';
+import o4 from '/assets/images/o4.png';
+import testimonial1 from '/assets/images/testimonial1.jpg';
+import testimonial2 from '/assets/images/testimonial2.jpg';
+import user1 from '/assets/images/7.jpg';
+import user2 from '/assets/images/8.jpg';
+import user3 from '/assets/images/9.jpg';
 
 // Home slider
 const imageData = {
   images: [
-    { id: "image1", url: "src/assets/images/b1.png" },
-    { id: "image2", url: "src/assets/images/b2.png" },
-    { id: "image3", url: "src/assets/images/b3.jpg" },
+    { id: "image1", url: "/assets/images/b1.png" },
+    { id: "image2", url: "/assets/images/b2.png" },
+    { id: "image3", url: "/assets/images/b3.jpg" },
   ],
 };
 
 // Top State Destinations By Travel Experts
 const stateData = {
   states: [
-    { id: "1", state: "Sikkim", url: "src/assets/images/Sikkim.jpeg", package: "3 Package", startingPrice: "Starting from  ₹5999" },
-    { id: "2", state: "Arunanchal", url: "src/assets/images/Arunachal.jpeg", package: "4 Package", startingPrice: "Starting from  ₹6999" },
-    { id: "3", state: "Bhutan", url: "src/assets/images/Bhutan.jpeg", package: "5 Package", startingPrice: "Starting from  ₹8999" },
-    { id: "4", state: "Odisha", url: "src/assets/images/Odisha.jpeg", package: "7 Package", startingPrice: "Starting from  ₹9999" },
+    { id: "1", state: "Sikkim", url: "/assets/images/Sikkim.jpeg", package: "3 Package", startingPrice: "Starting from  ₹5999" },
+    { id: "2", state: "Arunanchal", url: "/assets/images/Arunachal.jpeg", package: "4 Package", startingPrice: "Starting from  ₹6999" },
+    { id: "3", state: "Bhutan", url: "/assets/images/Bhutan.jpeg", package: "5 Package", startingPrice: "Starting from  ₹8999" },
+    { id: "4", state: "Odisha", url: "/assets/images/Odisha.jpeg", package: "7 Package", startingPrice: "Starting from  ₹9999" },
 
   ],
 };
 // Top Destinations By Travel Experts
 const destinationData = {
   destination: [
-    { id: "1", state: "Gangtok", url: "src/assets/images/tour/1.jpg", package: "3 Package", startingPrice: "Starting from  ₹5999" },
-    { id: "2", state: "Munnar", url: "src/assets/images/tour/2.jpg", package: "7 Package", startingPrice: "Starting from  ₹6999" },
-    { id: "3", state: "Rajkot", url: "src/assets/images/tour/3.jpg", package: "6 Package", startingPrice: "Starting from  ₹8999" },
-    { id: "4", state: "Pangong lake", url: "src/assets/images/tour/4.jpg", package: "8 Package", startingPrice: "Starting from  ₹9999" },
+    { id: "1", state: "Gangtok", url: "/assets/images/tour/1.jpg", package: "3 Package", startingPrice: "Starting from  ₹5999" },
+    { id: "2", state: "Munnar", url: "/assets/images/tour/2.jpg", package: "7 Package", startingPrice: "Starting from  ₹6999" },
+    { id: "3", state: "Rajkot", url: "/assets/images/tour/3.jpg", package: "6 Package", startingPrice: "Starting from  ₹8999" },
+    { id: "4", state: "Pangong lake", url: "/assets/images/tour/4.jpg", package: "8 Package", startingPrice: "Starting from  ₹9999" },
 
   ],
 };

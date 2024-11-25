@@ -1,25 +1,22 @@
 import React, {useEffect} from 'react'
 
-
-
-
 const Footer = () => {
   useEffect(() => {
     // Dynamically adding script tags
     const scriptPaths = [
-      "../../assets/js/jquery.min.js",
-      "../../assets/js/jquery.nice-select.min.js",
-      "../../assets/js/bootstrap.min.js",
-      "../../assets/js/jquery.magnific-popup.min.js",
-      "../../assets/js/countto.js",
-      "../../assets/js/swiper-bundle.min.js",
-      "../../assets/js/swiper.js",
-      "../../assets/js/price-ranger.js",
-      "../../assets/js/textanimation.js",
-      "../../assets/js/plugin.js",
-      "../../assets/js/jquery.fancybox.js",
-      "../../assets/js/shortcodes.js",
-      "../../assets/js/main.js",
+      "/assets/js/jquery.min.js",
+      "/assets/js/jquery.nice-select.min.js",
+      "/assets/js/bootstrap.min.js",
+      "/assets/js/jquery.magnific-popup.min.js",
+      "/assets/js/countto.js",
+      "/assets/js/swiper-bundle.min.js",
+      "/assets/js/swiper.js",
+      "/assets/js/price-ranger.js",
+      "/assets/js/textanimation.js",
+      "/assets/js/plugin.js",
+      "/assets/js/jquery.fancybox.js",
+      "/assets/js/shortcodes.js",
+      "/assets/js/main.js",
     ];
 
     scriptPaths.forEach((src) => {

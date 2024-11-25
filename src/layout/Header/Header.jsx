@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import TypewriterSearch from './TypeWriterSearch';
 import { Helmet } from 'react-helmet';
-import logo from '../../assets/images/logo2.png';
-import investor from '../../assets/images/investor.png';
-import login from '../../assets/images/login.png';
-import location from '../../assets/images/location.png';
-import trend from '../../assets/images/trend.png';
-import destination from '../../assets/images/destination.png';
-import cityTour from '../../assets/images/city-tour.png';
-import vacation from '../../assets/images/vacation.png';
-import taxi from '../../assets/images/taxi.png';
-import resort from '../../assets/images/resort.png';
-import plane from '../../assets/images/plane.png';
+import logo from '/assets/images/logo2.png';
+import investor from '/assets/images/investor.png';
+import login from '/assets/images/login.png';
+import location from '/assets/images/location.png';
+import trend from '/assets/images/trend.png';
+import destination from '/assets/images/destination.png';
+import cityTour from '/assets/images/city-tour.png';
+import vacation from '/assets/images/vacation.png';
+import taxi from '/assets/images/taxi.png';
+import resort from '/assets/images/resort.png';
+import plane from '/assets/images/plane.png';
 
  
 

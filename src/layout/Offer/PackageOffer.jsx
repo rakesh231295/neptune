@@ -18,9 +18,9 @@ const PackageOffer = () => {
   };
 
   const offers = [
-    { id: 1, image: "../../../src/assets/images/banner2.png" },
-    { id: 2, image: "../../../src/assets/images/banner2.png" },
-    { id: 3, image: "../../../src/assets/images/banner2.png" },
+    { id: 1, image: "/assets/images/banner2.png" },
+    { id: 2, image: "/assets/images/banner2.png" },
+    { id: 3, image: "/assets/images/banner2.png" },
   ];
 
   return (
