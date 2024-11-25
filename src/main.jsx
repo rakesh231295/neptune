@@ -4,6 +4,9 @@ import { createRoot } from 'react-dom/client'
 // import './assets/css/textanimation.css'
 // import './assets/css/magnific-popup.css'
 import App from './App.jsx'
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
