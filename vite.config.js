@@ -7,6 +7,7 @@ export default defineConfig({
     alias: {
       '@': '/src',
       "slick-carousel/slick": "node_modules/slick-carousel/slick",
+      base: "/neptune",
     },
   },
 });
