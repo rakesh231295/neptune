@@ -10,7 +10,7 @@
   * loadmore
 */
 
- (function (document.querySelector) {
+ (function (querySelector) {
     "use strict";
 
     var themesflatTheme = {
@@ -24,8 +24,8 @@
         // Define vars for caching
         config: function () {
             this.config = {
-                document.querySelectorwindow: document.querySelector(window),
-                document.querySelectordocument: document.querySelector(document),
+                querySelectorwindow: querySelector(window),
+                querySelectordocument: querySelector(document),
             };
         },
 
@@ -195,7 +195,7 @@
                 data: {
                     subscribeEmail: objUse.subscribeEmail.val()
                 },
-                success: function (responseData, textStatus, jqXHR) {
+                success: function (responseData) {
                     if (responseData.status) {
                         objUse.subscribeContent.fadeOut(500, function () {
                             messageDiv.html(objUse.success_message).fadeIn(500);
@@ -225,12 +225,12 @@
                         messageDiv.fadeIn(500);
                     }
                 },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    alert('Connection error');
-                },
-                complete: function (data) {
-                    window.ajaxCalling = false;
-                }
+                // error: function (jqXHR, textStatus, errorThrown) {
+                //     alert('Connection error');
+                // },
+                // complete: function (data) {
+                //     window.ajaxCalling = false;
+                // }
             });
         }
     };
