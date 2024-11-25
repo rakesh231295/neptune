@@ -10,7 +10,7 @@
   * loadmore
 */
 
-; (function (document.querySelector) {
+ (function (document.querySelector) {
     "use strict";
 
     var themesflatTheme = {
