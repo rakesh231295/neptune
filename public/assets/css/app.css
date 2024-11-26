@@ -40,7 +40,7 @@
     * Button
     * Tab
 */
-@import "./assets/fonts/style.css";
+@import "../fonts/style.css";
 @import "./animate.css";
 @import "./jquery.fancybox.min.css";
 @import "./magnific-popup.css";
