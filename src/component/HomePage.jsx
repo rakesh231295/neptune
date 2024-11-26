@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import Offer from '../layout/Offer/Offer';
 import PackageOffer from '../layout/Offer/PackageOffer';
 import 'react-slideshow-image/dist/styles.css';
-import Layout from '../layout/layout';
+import Layout from '../layout/layout.jsx';
 import t1 from '/assets/images/1.jpg';
 import t2 from '/assets/images/2.jpg';
 import t3 from '/assets/images/3.jpg';
