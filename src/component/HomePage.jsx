@@ -172,7 +172,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -217,7 +217,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Trending</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -262,7 +262,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Hot sell</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -307,7 +307,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -369,7 +369,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -411,7 +411,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Trending</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -453,7 +453,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Hot sell</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -495,7 +495,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -557,7 +557,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -599,7 +599,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Trending</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -641,7 +641,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Hot sell</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -683,7 +683,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -745,7 +745,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -787,7 +787,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Trending</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -829,7 +829,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Hot sell</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -871,7 +871,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -933,7 +933,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -975,7 +975,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Trending</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -1017,7 +1017,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Hot sell</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -1059,7 +1059,7 @@ const HomePage = () => {
                                 alt="Image Listing"
                               />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="tag-listing">Bestseller</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
@@ -1262,7 +1262,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o1} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1284,7 +1284,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o2} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1306,7 +1306,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o3} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1328,7 +1328,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o4} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1369,7 +1369,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o1} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1388,7 +1388,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o2} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1407,7 +1407,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o3} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1426,7 +1426,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o4} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1467,7 +1467,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o1} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1486,7 +1486,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o2} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1505,7 +1505,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o3} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1524,7 +1524,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o4} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1565,7 +1565,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o1} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1584,7 +1584,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o2} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1603,7 +1603,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o3} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1622,7 +1622,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o4} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1663,7 +1663,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o1} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1682,7 +1682,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o2} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1701,7 +1701,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o3} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
@@ -1720,7 +1720,7 @@ const HomePage = () => {
                             <a href="#" className="tour-listing-image">
                               <img src={o4} alt="Image Listing" />
                             </a>
-                            <div className="tour-listing-content">
+                            <div className="tour-listing-content pb-4">
                               <span className="map">
                                 <i className="fa fa-gift" />
                                 Book Now
