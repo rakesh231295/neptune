@@ -47,6 +47,56 @@ const destinationData = {
 
   ],
 };
+// Amazing Featured Tour Package the world
+const sikkimData = {
+  sikkim: [
+    { id: "1", feature: "Featured", tag: "Best Seller", location: "Sikkim, India", imgurl: "/assets/images/1.jpg", packageDays: "3 Days and 4 nights", sold: "250", regularPrice: "₹5999", sellingPrice: "₹4999" },
+    { id: "2", feature: "Featured", tag: "Best Seller", location: "Sikkim, India", imgurl: "/assets/images/2.jpg", packageDays: "3 Days and 4 nights", sold: "550", regularPrice: "₹6999", sellingPrice: "₹5999" },
+    { id: "3", feature: "Featured", tag: "Best Seller", location: "Sikkim, India", imgurl: "/assets/images/3.jpg", packageDays: "3 Days and 4 nights", sold: "350", regularPrice: "₹8999", sellingPrice: "₹7999" },
+    { id: "4", feature: "Featured", tag: "Best Seller", location: "Sikkim, India", imgurl: "/assets/images/4.jpg", packageDays: "3 Days and 4 nights", sold: "220", regularPrice: "₹9999", sellingPrice: "₹8999" },
+
+  ],
+};
+// Assam package
+const assamData = {
+  assam: [
+    { id: "1", feature: "Featured", tag: "Best Seller", location: "Assam, India", imgurl: "/assets/images/1.jpg", packageDays: "3 Days and 4 nights", sold: "250", regularPrice: "₹5999", sellingPrice: "₹4999" },
+    { id: "2", feature: "Featured", tag: "Best Seller", location: "Assam, India", imgurl: "/assets/images/2.jpg", packageDays: "3 Days and 4 nights", sold: "550", regularPrice: "₹6999", sellingPrice: "₹5999" },
+    { id: "3", feature: "Featured", tag: "Best Seller", location: "Assam, India", imgurl: "/assets/images/3.jpg", packageDays: "3 Days and 4 nights", sold: "350", regularPrice: "₹8999", sellingPrice: "₹7999" },
+    { id: "4", feature: "Featured", tag: "Best Seller", location: "Assam, India", imgurl: "/assets/images/4.jpg", packageDays: "3 Days and 4 nights", sold: "220", regularPrice: "₹9999", sellingPrice: "₹8999" },
+
+  ],
+};
+// rajasthan package
+const rajasthanData = {
+  rajasthan: [
+    { id: "1", feature: "Featured", tag: "Best Seller", location: "Rajasthan, India", imgurl: "/assets/images/1.jpg", packageDays: "3 Days and 4 nights", sold: "250", regularPrice: "₹5999", sellingPrice: "₹4999" },
+    { id: "2", feature: "Featured", tag: "Best Seller", location: "Rajasthan, India", imgurl: "/assets/images/2.jpg", packageDays: "3 Days and 4 nights", sold: "550", regularPrice: "₹6999", sellingPrice: "₹5999" },
+    { id: "3", feature: "Featured", tag: "Best Seller", location: "Rajasthan, India", imgurl: "/assets/images/3.jpg", packageDays: "3 Days and 4 nights", sold: "350", regularPrice: "₹8999", sellingPrice: "₹7999" },
+    { id: "4", feature: "Featured", tag: "Best Seller", location: "Rajasthan, India", imgurl: "/assets/images/4.jpg", packageDays: "3 Days and 4 nights", sold: "220", regularPrice: "₹9999", sellingPrice: "₹8999" },
+
+  ],
+};
+// rajasthan package
+const bhutanData = {
+  bhutan: [
+    { id: "1", feature: "Featured", tag: "Best Seller", location: "Bhutan, India", imgurl: "/assets/images/1.jpg", packageDays: "3 Days and 4 nights", sold: "250", regularPrice: "₹5999", sellingPrice: "₹4999" },
+    { id: "2", feature: "Featured", tag: "Best Seller", location: "Bhutan, India", imgurl: "/assets/images/2.jpg", packageDays: "3 Days and 4 nights", sold: "550", regularPrice: "₹6999", sellingPrice: "₹5999" },
+    { id: "3", feature: "Featured", tag: "Best Seller", location: "Bhutan, India", imgurl: "/assets/images/3.jpg", packageDays: "3 Days and 4 nights", sold: "350", regularPrice: "₹8999", sellingPrice: "₹7999" },
+    { id: "4", feature: "Featured", tag: "Best Seller", location: "Bhutan, India", imgurl: "/assets/images/4.jpg", packageDays: "3 Days and 4 nights", sold: "220", regularPrice: "₹9999", sellingPrice: "₹8999" },
+
+  ],
+};
+// West Bengal package
+const westbengalData = {
+  westbengal: [
+    { id: "1", feature: "Featured", tag: "Best Seller", location: "West Bengal, India", imgurl: "/assets/images/1.jpg", packageDays: "3 Days and 4 nights", sold: "250", regularPrice: "₹5999", sellingPrice: "₹4999" },
+    { id: "2", feature: "Featured", tag: "Best Seller", location: "West Bengal, India", imgurl: "/assets/images/2.jpg", packageDays: "3 Days and 4 nights", sold: "550", regularPrice: "₹6999", sellingPrice: "₹5999" },
+    { id: "3", feature: "Featured", tag: "Best Seller", location: "West Bengal, India", imgurl: "/assets/images/3.jpg", packageDays: "3 Days and 4 nights", sold: "350", regularPrice: "₹8999", sellingPrice: "₹7999" },
+    { id: "4", feature: "Featured", tag: "Best Seller", location: "West Bengal, India", imgurl: "/assets/images/4.jpg", packageDays: "3 Days and 4 nights", sold: "220", regularPrice: "₹9999", sellingPrice: "₹8999" },
+
+  ],
+};
 
 const HomePage = () => {
   return (
@@ -158,28 +208,30 @@ const HomePage = () => {
                       tabIndex={0}
                     >
                       <div className="row">
-                        <div className="col-sm-6 col-lg-3">
+                      {sikkimData.sikkim.map((sikkim) => ( 
+                        <>
+                        <div className="col-sm-6 col-lg-3" key={sikkim.id}>
                           <div
                             className="tour-listing wow fadeInUp animated "
                             data-wow-delay="0.1s"
                           >
                             <a href="#" className="tour-listing-image">
                               <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
+                                <span className="feature">{sikkim.feature}</span>
                               </div>
                               <img
-                                src={t1}
+                                src={sikkim.imgurl}
                                 alt="Image Listing"
                               />
                             </a>
                             <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
+                              <span className="tag-listing">{sikkim.tag}</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
-                                Sikkim, India
+                                {sikkim.location}
                               </span>
                               <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
+                                <a href="#">{sikkim.packageDays}</a>
                               </h3>
                               <div className="review">
                                 <i className="icon-Star" />
@@ -187,14 +239,14 @@ const HomePage = () => {
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
+                                <span>({sikkim.sold}+)</span>
                               </div>
                               <div className="flex-two">
                                 <div className="price-box flex-three">
                                   <p>
-                                    From <span className="price-sale">₹169.00</span>
+                                    From <span className="price-sale">{sikkim.sellingPrice}</span>
                                   </p>
-                                  <span className="price">₹199.00</span>
+                                  <span className="price">{sikkim.regularPrice}</span>
                                 </div>
                                 <div className="icon-bookmark">
                                   <i className="icon-Vector-151" />
@@ -203,146 +255,15 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div
-                            className="tour-listing wow fadeInUp animated "
-                            data-wow-delay="0.2s"
-                          >
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t2}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Trending</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div
-                            className="tour-listing wow fadeInUp animated "
-                            data-wow-delay="0.3s"
-                          >
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t3}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Hot sell</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div
-                            className="tour-listing wow fadeInUp animated "
-                            data-wow-delay="0.4s"
-                          >
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t4}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        </>
+                      ))
+                    }
+                       
                       </div>
                       <div className="row wow fadeInUp">
                         <div className="col-lg-12 center mt-44">
                           <a href="#" className="btn-main">
-                            <p className="btn-main-text">View all tour</p>
+                            <p className="btn-main-text">View all package</p>
                             <p className="iconer">
                               <i className="icon-13" />
                             </p>
@@ -358,25 +279,27 @@ const HomePage = () => {
                       tabIndex={0}
                     >
                       <div className="row">
-                        <div className="col-sm-6 col-lg-3">
+                        {assamData.assam.map((assam) => (
+                          <>
+                            <div className="col-sm-6 col-lg-3" key={assam.id}>
                           <div className="tour-listing">
                             <a href="#" className="tour-listing-image">
                               <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
+                                <span className="feature">{assam.feature}</span>
                               </div>
                               <img
-                                src={t1}
+                                src={assam.imgurl}
                                 alt="Image Listing"
                               />
                             </a>
                             <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
+                              <span className="tag-listing">{assam.feature}</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
-                                Sikkim, India
+                                {assam.location}
                               </span>
                               <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
+                                <a href="#">{assam.packageDays}</a>
                               </h3>
                               <div className="review">
                                 <i className="icon-Star" />
@@ -384,14 +307,14 @@ const HomePage = () => {
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
+                                <span>({assam.sold}+)</span>
                               </div>
                               <div className="flex-two">
                                 <div className="price-box flex-three">
                                   <p>
-                                    From <span className="price-sale">₹169.00</span>
+                                    From <span className="price-sale">{assam.sellingPrice}</span>
                                   </p>
-                                  <span className="price">₹199.00</span>
+                                  <span className="price">{assam.regularPrice}</span>
                                 </div>
                                 <div className="icon-bookmark">
                                   <i className="icon-Vector-151" />
@@ -400,137 +323,14 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t2}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Trending</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t3}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Hot sell</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t4}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                          </>
+                        ))}
+                        
                       </div>
                       <div className="row">
                         <div className="col-lg-12 center mt-44">
                           <a href="#" className="btn-main">
-                            <p className="btn-main-text">View all tour</p>
+                            <p className="btn-main-text">View all package</p>
                             <p className="iconer">
                               <i className="icon-13" />
                             </p>
@@ -546,25 +346,27 @@ const HomePage = () => {
                       tabIndex={0}
                     >
                       <div className="row">
-                        <div className="col-sm-6 col-lg-3">
+                        {rajasthanData.rajasthan.map((rajasthan) => (
+                          <>
+                          <div className="col-sm-6 col-lg-3" key={rajasthan.id}>
                           <div className="tour-listing">
                             <a href="#" className="tour-listing-image">
                               <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
+                                <span className="feature">{rajasthan.feature}</span>
                               </div>
                               <img
-                                src={t1}
+                                src={rajasthan.imgurl}
                                 alt="Image Listing"
                               />
                             </a>
                             <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
+                              <span className="tag-listing">{rajasthan.tag}</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
-                                Sikkim, India
+                                {rajasthan.location}
                               </span>
                               <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
+                                <a href="#">{rajasthan.packageDays}</a>
                               </h3>
                               <div className="review">
                                 <i className="icon-Star" />
@@ -572,14 +374,14 @@ const HomePage = () => {
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
+                                <span>({rajasthan.sold}+)</span>
                               </div>
                               <div className="flex-two">
                                 <div className="price-box flex-three">
                                   <p>
-                                    From <span className="price-sale">₹169.00</span>
+                                    From <span className="price-sale">{rajasthan.sellingPrice}</span>
                                   </p>
-                                  <span className="price">₹199.00</span>
+                                  <span className="price">{rajasthan.regularPrice}</span>
                                 </div>
                                 <div className="icon-bookmark">
                                   <i className="icon-Vector-151" />
@@ -588,137 +390,14 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t2}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Trending</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t3}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Hot sell</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t4}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                          </>
+                        ))}
+                        
                       </div>
                       <div className="row">
                         <div className="col-lg-12 center mt-44">
                           <a href="#" className="btn-main">
-                            <p className="btn-main-text">View all tour</p>
+                            <p className="btn-main-text">View all package</p>
                             <p className="iconer">
                               <i className="icon-13" />
                             </p>
@@ -734,25 +413,27 @@ const HomePage = () => {
                       tabIndex={0}
                     >
                       <div className="row">
-                        <div className="col-sm-6 col-lg-3">
+                        {bhutanData.bhutan.map((bhutan) => (
+                          <>
+                          <div className="col-sm-6 col-lg-3" key={bhutan.id}>
                           <div className="tour-listing">
                             <a href="#" className="tour-listing-image">
                               <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
+                                <span className="feature">{bhutan.feature}</span>
                               </div>
                               <img
-                                src={t1}
+                                src={bhutan.imgurl}
                                 alt="Image Listing"
                               />
                             </a>
                             <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
+                              <span className="tag-listing">{bhutan.tag}</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
-                                Sikkim, India
+                                {bhutan.location}
                               </span>
                               <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
+                                <a href="#">{bhutan.packageDays}</a>
                               </h3>
                               <div className="review">
                                 <i className="icon-Star" />
@@ -760,14 +441,14 @@ const HomePage = () => {
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
+                                <span>({bhutan.sold}+)</span>
                               </div>
                               <div className="flex-two">
                                 <div className="price-box flex-three">
                                   <p>
-                                    From <span className="price-sale">₹169.00</span>
+                                    From <span className="price-sale">{bhutan.sellingPrice}</span>
                                   </p>
-                                  <span className="price">₹199.00</span>
+                                  <span className="price">{bhutan.regularPrice}</span>
                                 </div>
                                 <div className="icon-bookmark">
                                   <i className="icon-Vector-151" />
@@ -776,137 +457,14 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t2}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Trending</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t3}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Hot sell</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t4}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                          </>
+                        )) }
+                        
                       </div>
                       <div className="row">
                         <div className="col-lg-12 center mt-44">
                           <a href="#" className="btn-main">
-                            <p className="btn-main-text">View all tour</p>
+                            <p className="btn-main-text">View all package</p>
                             <p className="iconer">
                               <i className="icon-13" />
                             </p>
@@ -922,25 +480,27 @@ const HomePage = () => {
                       tabIndex={0}
                     >
                       <div className="row">
-                        <div className="col-sm-6 col-lg-3">
+                        {westbengalData.westbengal.map((westbengal) => (
+                          <>
+                          <div className="col-sm-6 col-lg-3" key={westbengal.id}>
                           <div className="tour-listing">
                             <a href="#" className="tour-listing-image">
                               <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
+                                <span className="feature">{westbengal.feature}</span>
                               </div>
                               <img
-                                src={t1}
+                                src={westbengal.imgurl}
                                 alt="Image Listing"
                               />
                             </a>
                             <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
+                              <span className="tag-listing">{westbengal.tag}</span>
                               <span className="map">
                                 <i className="icon-Vector4" />
-                                Sikkim, India
+                                {westbengal.location}
                               </span>
                               <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
+                                <a href="#">{westbengal.packageDays}</a>
                               </h3>
                               <div className="review">
                                 <i className="icon-Star" />
@@ -948,14 +508,14 @@ const HomePage = () => {
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
                                 <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
+                                <span>({westbengal.sold}+)</span>
                               </div>
                               <div className="flex-two">
                                 <div className="price-box flex-three">
                                   <p>
-                                    From <span className="price-sale">₹169.00</span>
+                                    From <span className="price-sale">{westbengal.sellingPrice}</span>
                                   </p>
-                                  <span className="price">₹199.00</span>
+                                  <span className="price">{westbengal.regularPrice}</span>
                                 </div>
                                 <div className="icon-bookmark">
                                   <i className="icon-Vector-151" />
@@ -964,137 +524,14 @@ const HomePage = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t2}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Trending</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t3}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Hot sell</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-3">
-                          <div className="tour-listing">
-                            <a href="#" className="tour-listing-image">
-                              <div className="badge-top flex-two">
-                                <span className="feature">Featured</span>
-                              </div>
-                              <img
-                                src={t4}
-                                alt="Image Listing"
-                              />
-                            </a>
-                            <div className="tour-listing-content pb-4">
-                              <span className="tag-listing">Bestseller</span>
-                              <span className="map">
-                                <i className="icon-Vector4" />
-                                Sikkim, India
-                              </span>
-                              <h3 className="title-tour-list">
-                                <a href="#">Days and 6 nights From Lachen</a>
-                              </h3>
-                              <div className="review">
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <i className="icon-Star" />
-                                <span>(2500+ Sold)</span>
-                              </div>
-                              <div className="flex-two">
-                                <div className="price-box flex-three">
-                                  <p>
-                                    From <span className="price-sale">₹169.00</span>
-                                  </p>
-                                  <span className="price">₹199.00</span>
-                                </div>
-                                <div className="icon-bookmark">
-                                  <i className="icon-Vector-151" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                          </>
+                        ))}
+                        
                       </div>
                       <div className="row">
                         <div className="col-lg-12 center mt-44">
                           <a href="#" className="btn-main">
-                            <p className="btn-main-text">View all tour</p>
+                            <p className="btn-main-text">View all package</p>
                             <p className="iconer">
                               <i className="icon-13" />
                             </p>

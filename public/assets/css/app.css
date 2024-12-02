@@ -342,6 +342,7 @@
 .main-header .main-menu .navbar-collapse {
   padding: 0px;
   display: block;
+  margin-left: -18%;;
 }
 
 .main-header .header-lower .main-menu .navigation {

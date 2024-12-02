@@ -207,13 +207,6 @@ const Header = () => {
                               <span className="current">Sign In</span>
                             </div>
                           </div>
-
-                          <div className="language">
-                            <div className="nice-select" tabIndex="0">
-                              <img src={investor} alt="Investor" />
-                              <span className="current">Investor</span>
-                            </div>
-                          </div>
                         </div>
                       </div>
                     </div>
